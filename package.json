@@ -1,0 +1,41 @@
+{
+  "name": "@sfpy/web3-sdk",
+  "version": "1.0.2",
+  "description": "Javascript SDK to interact with Sfpy smart contracts in a web3 context",
+  "repository": "https://github.com/sfpyhub/web3-sdk.git",
+  "author": "Ziyad Parekh",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "sfpy",
+    "safepay",
+    "ethereum"
+  ],
+  "module": "dist/sdk.esm.js",
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.1.0",
+    "tsdx": "^0.14.1"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.3.0",
+    "@ethersproject/solidity": "^5.3.0",
+    "big.js": "^6.1.1",
+    "decimal.js-light": "^2.5.1",
+    "jsbi": "^3.1.4",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3",
+    "toformat": "^2.0.0"
+  }
+}
